@@ -1,0 +1,527 @@
+
+ * {
+    font-family: Verdana, Arial, Sans-Serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+	/*background-color: #fff;*/
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 15px;
+	line-height: 1.5em;
+	margin: 0;
+	padding: 0;
+}
+.mobile{
+	display: none;
+}
+/*************************HEADER STYLES*************************/
+
+.header {
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: rgb(0, 0, 0);
+	padding: 0 55px;
+	/*height: 20%;*/
+}
+
+.logo a{
+	display: block;
+}
+
+.logo a img {
+	padding: 5px;
+	display: block;
+	height: 100%
+
+}
+.navigation {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	
+}
+
+.menu {
+	display: flex;
+	justify-content: left;
+	flex-direction: row;
+	align-items: center;
+	z-index: 1;
+}
+
+.menu li{
+	list-style-type: none;
+}
+
+.menu li a{
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	display: block;
+	padding: 35px 25px 25px 25px;
+	font-size: 16px;
+	text-align: center;
+}
+
+.current {
+	color: rgb(255, 255, 255);
+	display: block;
+	padding: 35px 25px 35px 25px;
+	font-size: 16px;
+	text-align: center;
+}
+
+.current_index {
+	color: rgba(255, 255, 255, 0.577);
+	text-decoration: none;
+	display: block;
+	padding: 35px 25px 25px 25px;
+	font-size: 16px;
+	text-align: center;
+	
+}
+
+.menu li a:hover{
+    color: rgb(170, 29, 29);
+}
+
+/*UNDER THE HEADER CONTENT*/
+.uhead {
+	list-style-type: none;
+    display: flex;
+    flex-direction: row;
+	justify-content: center;
+}
+.oc{
+	padding: 1em 30px;
+}
+.ic{
+	padding: 0 10px;
+}
+.uhead ul{
+    list-style-type: none;
+	display: flex;
+	flex-direction: row;
+}
+
+.mobile .socials{
+	padding: 10px;
+}
+.mobile #uhead{
+	margin-bottom: 50px;
+}
+
+.half{
+	display: flex;
+	flex-direction: row;
+}
+
+/*MAIN STYLES*/
+
+.about{
+	display: flex;
+	margin: 0 10%;
+	width: 80%;
+	position: relative;
+}
+.about section{
+	width: 50%;
+	padding: 5px 7px 5px 5px;
+	margin-right: 4px;
+	display: block;
+	position: relative;
+	width: 50%;
+}
+.about section li{
+	margin-left: 15px;
+}
+.content, .pizzaTypes, .topAndFroz{
+	/*(margin: 0 10%;*/
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.top{
+	display: block;
+	width: 80%;
+	text-align: center;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+.top h1{
+	margin: 1em 0 1.5em 0;
+}
+.top p{
+	margin:.5em .5em .5em .5em
+}
+h1{
+	text-align: center;
+	margin: 1em 0 1.2em 0;
+}
+.h1line{
+	display: block;
+	height: 2px;
+	background-image: linear-gradient(to right, rgba(202, 23, 23, 0), rgba(202, 23, 23, 0.422), rgba(197, 31, 31, 0.474), rgba(202, 23, 23, 0));
+	border: 0;
+	margin: 15px 15%;
+}
+h2{
+	text-align: center;
+}
+#wrapper h2{
+	margin: 10px 0 2em 0 ;
+}
+#wrapper{
+	margin: 0 5%;
+	
+}
+h2, h3, h4, h5{
+	color: rgb(170, 29, 29);
+}
+.fig{
+	/*border: solid rgb(0, 0, 0) 1px;*/
+	display: inline-block;
+	position: relative;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	padding: 10px;
+	text-align: center;
+	/*font-style: italic;*/
+	/*font-size: smaller;*/
+	text-indent: 0;
+	/*border: thin silver solid;*/
+	width: 400px;
+}
+.indexMain{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.indexMain section{
+	display: inline-block;
+	position: relative;
+	margin: 10px 15px;
+	padding: 5px;
+	text-align: center;
+	/*font-style: italic;*/
+	/*font-size: smaller;*/
+	text-indent: 0;
+	/*border: thin silver solid;*/
+	width: 400px;
+}
+
+.indexMain section a{
+	text-decoration: none;
+	color: #000;
+}
+.fig em{
+	font-size: .75em;
+}
+section h2{
+	text-align: center;
+}
+li{
+	list-style: none;
+}
+.about li{
+	list-style: disc;
+}
+.split{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+/***CATERING STYLE****/
+.catering{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.catering figure{
+	padding-left: 30px;
+	width: 500px;
+	margin: 10px 8px 5px 15px;
+}
+
+
+/********TABLE STYLES*******/
+table{
+	text-align: left;
+}
+th, td{
+	padding: 0 5px 0 0;
+}
+
+
+/*PIZZA TYPE SYLES*/
+.pizzac ul{
+	display: flex;
+	flex-direction: row;
+	padding: 10px 30px;
+	justify-content: center;
+}
+.pizzac li{
+	list-style: none;
+	padding: 0 30px;
+}
+/***FORM STYLES***/
+form {
+	width: 75%;
+	color: #8b0d0d;
+	margin: 25px auto 0 auto;
+	}
+
+form h1 {
+	font-size: 2em;
+	margin: 0 0 25px 0;
+	}
+
+form div {
+	position: relative;
+	margin: 0 0 15px 0;
+	}
+
+form > div:last-of-type {
+	border-top: 1px solid #8b0d0d;
+	margin-top: 20px;
+	padding-top: 10px;
+	}
+
+form input, form textarea {
+	width: 100%;
+	color: black;
+	background-color: rgba(143, 26, 26, 0.398);
+	font-size: .9em;
+	border: 1px solid rgba(0,0,0,0);
+	outline: none;
+	padding: 5px 12px;
+	}
+	form .dot{
+		display: flex;
+		flex-direction: row;
+	}
+
+form input[type="submit"] {
+	width: auto;
+	color: black;
+	background-color: rgba(143, 26, 26, 0.398);
+	font-size: .8rem;
+	border: 1px solid black;
+	margin-top: 20px;
+	padding: 5px 20px;
+	cursor: pointer;
+	}
+
+label {
+	display: block;
+	}
+form input[type="radio"] {
+	display: block;
+	width: 50px;
+}
+form input[type="checkbox"] {
+	position: relative;
+	width: auto;
+	top: -2px;
+	border-radius: 80%;
+	}
+
+form input[type="checkbox"] + label {
+	display: inline;
+	padding-left: 10px;
+	}
+
+input:required {
+	border: 1px solid black;
+	}
+
+input:required + label {
+	color: black;
+	}
+
+input:required + label::before {
+	position: absolute;
+	top: -2px;
+	left: -15px;
+	content: "*";
+	}
+
+input:required + label::after {
+	font-size: .7em;
+	font-style: italic;
+	letter-spacing: .15em;
+	padding-left: 10px;
+	content: "required";
+	}
+div
+
+
+.schedule {
+		width: 40%;
+           border: 1px solid black;
+           border-collapse: collapse;
+           margin-bottom: 1em;
+           margin-left: auto;
+           margin-right: auto;
+		   font-size: 1.5em;
+		   text-align: center;
+}
+.schedule th{
+	padding: 5px;
+	border: 1px solid black;
+}
+.schedule td{
+	padding: 5px;
+	border: 1px solid black;
+}
+.schedule tr:nth-of-type(even){
+	background-color: #74151573;
+}
+
+/**HR SPACING**/
+hr{
+	display: block;
+	height: 2px;
+	background-image: linear-gradient(to right, rgba(225,255,255,0), rgba(0,0,0,0.5), rgba(0,0,0,.5), rgba(255,255,255,0));
+	border: 0;
+	margin: 15px 15%;
+}
+
+/**FOOTER**/
+footer{
+	background-color: black;
+	color: white;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+footer section{
+	padding: 1em 3em;
+}
+footer p{
+	font-size: .5em;
+}
+/*************HAMBURGER MENU FOR MOBILE STYLES*********/
+.hamburger {
+	position: relative;
+	width: 30px;
+	height: 4px;
+	background-color: rgb(255, 255, 255);
+	border-radius: 10px;
+	cursor: pointer;
+	z-index: 2;
+    color: #FFF;
+}
+
+.hamburger:before, .hamburger:after{
+	content: "";
+	position: absolute;
+	height: 4px;
+	right: 0;
+	background-color: #FFF;
+	border-radius: 10px;
+}
+
+.hamburger:before {
+	top: -10px;
+	width: 20px;
+}
+
+.hamburger:after {
+	top: 10px;
+	width: 25px;
+}
+
+.toggle-menu {
+	position: absolute;
+	width: 30px;
+	height: 100%;
+	z-index: 3;
+	cursor: pointer;
+	opacity: 0;
+    background-color: #000;
+}
+
+.hamburger, .toggle-menu {
+	display: none;
+}
+
+.navigation input:checked ~ .hamburger {
+	background: transparent;
+}
+
+.navigation input:checked ~ .hamburger:before{
+	top: 0;
+	width: 30px;
+}
+
+.navigation input:checked ~ .hamburger:after{
+	top: 0;
+	width: 30px;
+}
+
+.navigation input:checked ~ .menu {
+	right: 0;
+}
+
+
+/********MEDIA QUERY*********/
+@media screen and (max-width: 768px) {
+	/***MOBILE AND DESKTOP***/
+	.mobile{
+		display: inline;
+	}
+	.mobile h2{
+		text-align: center;
+	}
+	.desktop{
+		display: none;
+	}
+	/*****HAMBURGER MENU STYLES*****/
+	.hamburger, .toggle-menu {
+		display: block;
+	}
+	
+	.header {
+		padding: 10px 20px;
+	}
+	
+	.menu {
+		justify-content: start;
+		flex-direction: column;
+		align-items: center;
+		position: fixed;
+		top: 0;
+		right: -300px;
+		background-color: rgb(0, 0, 0);
+		width: 300px;
+		height: 100%;
+		padding-top: 65px;
+	}
+	
+	.menu li {
+		width: 100%;
+	}
+	
+	.menu li a{
+		padding: 30px;
+		font-size: 18px;
+		box-shadow: 0 1px 0 rgba(225,225,225,0.1) inset;
+	}
+	#wrapper{
+		width: 100%;
+	}
+	.schedule{
+		width: 80%;
+	}
+
+}
